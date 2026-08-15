@@ -86,7 +86,6 @@ section.imagem{
 
 section.imagem > p{
     margin: auto;
-    display: inline-block;
     width: 400px;
     background-color: rgba(0, 0, 0, 0.459);
 
