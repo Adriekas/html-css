@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Shadows+Into+Light&display=swap');
 
 
 @font-face {
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-    font-family: 'Sriracha';
+    font-family: 'Shadows Into Light';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -30,9 +30,9 @@ html, body{
 }
 
 :root{
-    --fonte1:var( Verdana, Geneva, Tahoma, sans-serif);
-    --fonte2:var('Passion One', cursive);
-    --fonte3:var('Sriracha', cursive);
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3:'Shadows Into Light', cursive;
 }
 
 header{
@@ -67,7 +67,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-size: 3.5vw;
+    font-size: 3vw;
+    font-family: var(--fonte3);
     text-align: center;
 }
 section > p{
@@ -84,6 +85,8 @@ section.imagem{
 }
 
 section.imagem > p{
+    margin: auto;
+    display: inline-block;
     width: 400px;
     background-color: rgba(0, 0, 0, 0.459);
 
