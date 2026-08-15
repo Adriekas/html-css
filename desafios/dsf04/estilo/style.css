@@ -1,7 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
 
 @font-face {
     font-family: 'Passion One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url();
+}
+
+@font-face {
+    font-family: 'Sriracha';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -14,9 +23,14 @@
     font-size: 1em;
 }
 
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
 
 :root{
-    --fonte1:var(verdana, Geneva, Tahoma, sans-serif);
+    --fonte1:var( Verdana, Geneva, Tahoma, sans-serif);
     --fonte2:var('Passion One', cursive);
     --fonte3:var('Sriracha', cursive);
 }
@@ -24,22 +38,17 @@
 header{
     background-color: black;
     text-align: center;
+    color: white;
 }
 header h1{
     font-size: 10vw;
+    font-variant: small-caps;
     padding-top: 50px;
     font-family: var(--fonte2);
-    color: white;
-}
+    }
 header p{
-    color: white;
     padding-bottom: 50px;
     font-size: 1em;
-}
-body{
-    min-height: 100vh;
-    background-color: darkgray;
-    font-family: var(--fonte1);
 }
 
 a{
@@ -52,10 +61,46 @@ a:hover{
     text-decoration: underline;
 }
 
-footer{
-    background-color: black;
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.5vw;
+    text-align: center;
 }
-footer p{
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    color: white;
+}
+
+section.imagem > p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.459);
+
+}
+
+section#img01{
+    background: black url('../imagens/background001.jpg') center right no-repeat fixed;
+    background-size: cover;
+}
+section#img02{
+    background: black url(../imagens/background002.jpg) center right no-repeat fixed;
+    background-size: cover;
+}
+
+footer{
+    padding: 20px;
+    background-color: black;
     color: white;
     text-align: center;
 }
