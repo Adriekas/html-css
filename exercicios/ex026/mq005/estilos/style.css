@@ -34,7 +34,6 @@ span#burguer:hover {
     color: black;
 }
 menu{
-    display: block;
     display: none;
 }
 
